@@ -16,7 +16,7 @@ from lib import *
 from numpy import var
 from Models import *
 
-MODEL = nasa93.nasa93
+MODEL = usp05.usp05
 
 """
 
@@ -472,7 +472,6 @@ def _where(m=MODEL):
     s =  scores(m,r)
     told += s
   global The
-  print(len(m._rows)**0.5)
   The=defaults().update(verbose = True,
                minSize = len(m._rows)**0.5,
                prune   = False,
